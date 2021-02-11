@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:school_x/screens/student_profile_screen.dart';
 
 class CustomDrawer extends StatelessWidget {
+  String nameOfStudent = "Jhaymes";
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -11,8 +13,10 @@ class CustomDrawer extends StatelessWidget {
         height: 150,
           ),
       ListTile(
-          onTap: (){},
-      title: Text("Ifiok Jhaymes ",style: TextStyle(fontSize: 20,),),
+          onTap: (){
+            Navigator.of(context).pushNamed(StudentProfileScreen.routeName,arguments: nameOfStudent);
+          },
+      title: Text("$nameOfStudent",style: TextStyle(fontSize: 20,),),
         trailing: Icon(Icons.person,color: Colors.black,),
         ),
       ListTile(

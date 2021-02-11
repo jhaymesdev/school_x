@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import './screens/analysis.dart';
+import './screens/student_profile_screen.dart';
 import './screens/full_notification_screen.dart';
 import './providers/notification_info.dart';
 import './providers/notification_list.dart';
@@ -27,7 +29,9 @@ class MyApp extends StatelessWidget {
         ),
         home: CustomNavigationBar(),
         routes: {
+          StudentProfileScreen.routeName:(context) => StudentProfileScreen(),
           FullNotificationScreen.routeName:(context)=> FullNotificationScreen(),
+          Analysis.routeName:(context) => Analysis(),
         },
       ),
     );
