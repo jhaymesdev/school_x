@@ -14,7 +14,7 @@ class CustomDrawer extends StatelessWidget {
           ),
       ListTile(
           onTap: (){
-            Navigator.of(context).pushNamed(StudentProfileScreen.routeName,arguments: nameOfStudent);
+            Navigator.of(context).pushNamed(StudentProfileScreen.routeName,);
           },
       title: Text("$nameOfStudent",style: TextStyle(fontSize: 20,),),
         trailing: Icon(Icons.person,color: Colors.black,),

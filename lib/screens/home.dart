@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body:ListView(
         children: [
-          newsFeed("assets/image/dsc_lead.jpg", "New DSC lead"),
+          newsFeed("assets/image/dsc_lead.jpg", "A dope girl joined our school"),
           newsFeed("assets/image/game_prefect.jpg", "Update on the on-Going milo basket ball competition"),
           newsFeed("assets/image/prefect.jpg", "The frowning student finally becomes happy"),
           newsFeed("assets/image/dsc_lead.jpg", "New DSC lead"),

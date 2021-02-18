@@ -10,7 +10,7 @@ class _AnalysisState extends State<Analysis> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      //appBar: AppBar(),
       body: Center(
         child: Text("Welcome to the analysis page for result and student"),
       ),

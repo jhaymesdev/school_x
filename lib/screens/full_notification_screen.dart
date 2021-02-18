@@ -14,9 +14,9 @@ class _FullNotificationScreenState extends State<FullNotificationScreen> {
     final openedNotification = Provider.of<NotificationList>(context,listen: false)
     .findById(notificationId);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(openedNotification.subject),
-      ),
+      // appBar: AppBar(
+      //   title: Text(openedNotification.subject),
+      // ),
       body: Column(
         children: [
           openedNotification.moreInfo.startsWith("http")? Column(
